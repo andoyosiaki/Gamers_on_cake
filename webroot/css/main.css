@@ -1,0 +1,487 @@
+.reset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+.button {
+  padding: 5px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 14px;
+  border: 1px solid #555;
+  font-size: 18px;
+  background: red;
+  color: #fff;
+}
+
+.error {
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+  background: #FFFF33;
+  color: #555;
+}
+
+.success {
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+  background: skyblue;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.submit {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+ul {
+  padding: 0;
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.Attension, .SerchForm_Extend_Attension, .UserInsertBox .UserInsertBox_Extend_Attension {
+  width: 300px;
+  margin: 0 auto;
+  border-top: 1px solid #555 !important;
+}
+.Attension .uncer, .SerchForm_Extend_Attension .uncer, .UserInsertBox .UserInsertBox_Extend_Attension .uncer, .SerchForm_Extend_Attension .SerchForm_Extend_uncer, .UserInsertBox .UserInsertBox_Extend_Attension .UserInsertBox_Extend_uncer {
+  text-align: center;
+  margin: 15px 0 0;
+  position: relative;
+  top: -27px;
+  left: 50px;
+  width: 200px;
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.ProcedureInt {
+  margin-bottom: 15px;
+  font-size: 3rem;
+}
+
+.Wrap_SectionDesc {
+  width: 300px;
+  margin: 0 auto;
+}
+.Wrap_SectionDesc .SectionDesc {
+  font-size: 50px;
+  background: gray;
+  border-radius: 5px;
+  border: 1px dashed red;
+}
+
+.HeaderBtn, #register, #login, #logout, #post, #mypage {
+  padding: 12px 5px;
+  margin: 0 5px;
+  border-radius: 3px;
+}
+
+#register {
+  background-color: orange;
+}
+
+#login {
+  background-color: royalblue;
+  color: #fff;
+}
+
+#logout {
+  background-color: tomato;
+}
+
+#post {
+  background-color: darkorange;
+}
+
+#mypage {
+  background-color: skyblue;
+  color: #fff;
+}
+
+.HeaderSection {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  background: url(../img/header_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.HeaderSection_Box {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.HeaderSection_Box .HeaderSection_Title {
+  font-size: 45px;
+  margin-bottom: 35px;
+  padding: 0 50px;
+  background-color: rgba(232, 239, 255, 0.8);
+  border-radius: 5px;
+}
+
+.SerchFormBox {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  background: url(../img/serchitem_background.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 40px 0;
+}
+.SerchFormBox .SerchForm {
+  width: 500px;
+  text-align: center;
+}
+.SerchFormBox .SerchForm .button {
+  padding: 5px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 14px;
+  border: 1px solid #555;
+  font-size: 18px;
+  background: blue;
+  color: #fff;
+}
+
+.SerchForm_Extend_Attension {
+  width: 375px;
+}
+.SerchForm_Extend_Attension .SerchForm_Extend_uncer {
+  width: 280px;
+}
+
+.inputtext, .UserInsertBox .ExtendInputText {
+  background-color: #fff;
+  width: 80%;
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+.ItemResultBox {
+  width: 100%;
+}
+.ItemResultBox_Article {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.ItemResultBox_Article .ItemResultBox_Loop {
+  max-width: 500px;
+  padding: 15px 0;
+  margin: 15px auto;
+  border-bottom: 1px solid #555;
+}
+.ItemResultBox_Article .ItemResultBox_Loop:last-child {
+  border-bottom: none;
+}
+.ItemResultBox_Article .ItemResultBox_Loop .Items {
+  margin: 5px 0;
+}
+.ItemResultBox_Article .ItemResultBox_Loop .ItemTitle {
+  font-size: 1.5rem;
+}
+
+.ItemResultbutton {
+  padding: 5px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 14px;
+  border: 1px solid #555;
+  font-size: 18px;
+  background: #fff;
+  color: #555;
+}
+
+.ChoiceBox {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  margin: 15px 0;
+}
+
+.IntoroductionPostForm {
+  width: 100%;
+}
+.IntoroductionPostForm .IntoroductionForm {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.textareas {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.textareas textarea {
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.PostItemsSection {
+  width: 100%;
+}
+.PostItemsSection_Article {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px 0;
+  margin: 15px auto;
+}
+
+.PaginateBox {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: darkgray;
+}
+.PaginateBox li a {
+  padding: 15px 20px;
+  margin: 0 10px;
+  border: 1px dashed #555;
+}
+
+.UserInsertBox {
+  max-width: 1000px;
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px 0;
+  border: 1px dashed #555;
+}
+.UserInsertBox .UserInsertBox_Extend_Attension {
+  width: 500px;
+}
+.UserInsertBox .UserInsertBox_Extend_Attension .UserInsertBox_Extend_uncer {
+  width: 330px;
+  left: 80px;
+}
+.UserInsertBox .UserInsertBox_Input {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 15px 15px;
+}
+.UserInsertBox .WrapIconBox {
+  margin: 20px 0;
+}
+.UserInsertBox .WrapIconBox .IconBox {
+  display: inline-block;
+  text-align: center;
+  margin: 0 15px;
+}
+.UserInsertBox .button {
+  padding: 5px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 14px;
+  border: 1px solid #555;
+  font-size: 18px;
+  background: blue;
+  color: #fff;
+}
+.UserInsertBox .ExtendInputText {
+  margin: 10px 0 0 5px;
+}
+
+.ItemListSection {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.ItemListSection .ItemListSection_Article {
+  padding: 25px;
+  border-bottom: 1px solid #555;
+}
+.ItemListSection .ItemListSection_Article .ItemListSection_Title_Hard_box {
+  display: flex;
+  align-items: center;
+  margin: 15px 0 0;
+  width: 100%;
+}
+.ItemListSection .ItemListSection_Article .ItemListSection_Title_Hard_box .ItemHardware {
+  background-color: skyblue;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+.ItemListSection .ItemListSection_Article .ItemListSection_Title_Hard_box .ItemTitle {
+  background-color: tomato;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin-left: 150px;
+}
+.ItemListSection .ItemListSection_Article .ItemListSection_Texts_Image_Box {
+  display: flex;
+  padding: 10px 0 0 0px;
+}
+.ItemListSection .ItemListSection_Article .ItemListSection_Texts_Image_Box .ItemListSection_Texts_Auth_Box {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+.ItemListSection .ItemListSection_Article .ItemListSection_Texts_Image_Box .ItemListSection_Texts_Auth_Box .ItemListSection_Texts {
+  margin-left: 50px;
+}
+.ItemListSection .ItemListSection_Article .ItemListSection_Texts_Image_Box .ItemListSection_Texts_Auth_Box .ItemListSection_Texts .Text {
+  height: auto;
+  padding: 15px;
+  margin: 0 0 15px;
+  background: #e0edff;
+  box-sizing: border-box;
+  width: 450px;
+  overflow-wrap: break-word;
+}
+.ItemListSection .ItemListSection_Article .ItemListSection_Texts_Image_Box .ItemListSection_Texts_Auth_Box .ItemListSection_Image {
+  width: 100px;
+  margin: 0 auto;
+}
+.ItemListSection .ItemListSection_Article .ItemListSection_Texts_Image_Box .ItemListSection_Texts_Auth_Box .ItemListSection_Image img {
+  width: 100%;
+}
+.ItemListSection .ItemListSection_Article .ItemListSection_Texts_Image_Box .ItemListSection_Texts_Auth_Box .ItemListSection_Username {
+  text-align: center;
+}
+.ItemListSection .ItemListSection_Article .ItemListSection_TinkerBox {
+  display: flex;
+  align-items: center;
+}
+.ItemListSection .ItemListSection_Article .ItemListSection_TinkerBox .ItemListSection_ItemDetailBtn {
+  margin: 15px 0;
+}
+.ItemListSection .ItemListSection_Article .ItemListSection_TinkerBox .ItemListSection_ItemDetailBtn .ItemListSection_ItemDetail {
+  padding: 5px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 14px;
+  border: 1px solid #555;
+  font-size: 18px;
+  background: tomato;
+  color: #fff;
+  margin: 0 15px;
+}
+.ItemListSection .ItemListSection_Article .ItemListSection_TinkerBox .ItemListSection_Delete_Edit {
+  margin-left: 100px;
+}
+.ItemListSection .ItemListSection_Article .ItemListSection_TinkerBox .ItemListSection_Delete_Edit .ItemListSection_Edit {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: red;
+  color: #fff;
+}
+.ItemListSection .ItemListSection_Article .ItemListSection_TinkerBox .ItemListSection_Delete_Edit .ItemListSection_Delete {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: blue;
+  color: #fff;
+}
+
+@media (max-width: 882px) {
+  .ItemListSection_Title_Hard_box {
+    text-align: center;
+    display: inline-block !important;
+  }
+  .ItemListSection_Title_Hard_box .ItemHardware {
+    display: inline-block;
+  }
+  .ItemListSection_Title_Hard_box .ItemTitle {
+    display: inline-block;
+    margin: 10px 0 10px 0 !important;
+    font-size: 16px;
+  }
+
+  .ItemListSection_Texts_Image_Box {
+    display: block !important;
+    text-align: center;
+  }
+  .ItemListSection_Texts_Image_Box .ItemListSection_Texts_Auth_Box {
+    display: block !important;
+    margin-left: 0 !important;
+    padding: 0;
+  }
+  .ItemListSection_Texts_Image_Box .ItemListSection_Texts_Auth_Box .ItemListSection_Texts {
+    margin-left: 0 !important;
+  }
+  .ItemListSection_Texts_Image_Box .ItemListSection_Texts_Auth_Box .ItemListSection_Texts .Text {
+    width: 100% !important;
+  }
+
+  .ItemListSection_ItemDetailBtn {
+    margin: 0 auto !important;
+    text-align: center;
+  }
+
+  .ItemListSection_TinkerBox {
+    display: block !important;
+  }
+  .ItemListSection_TinkerBox .ItemListSection_Delete_Edit {
+    margin-left: 0 !important;
+    text-align: center;
+    padding: 15px 0;
+  }
+}
+@media (max-width: 630px) {
+  .HeaderSection {
+    height: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .HeaderSection_Title {
+    font-size: 35px !important;
+  }
+
+  .SerchForm_Extend_Attension {
+    width: 300px !important;
+  }
+
+  .SerchForm_Extend_uncer {
+    width: 210px !important;
+  }
+
+  .SerchForm_Extend_uncer {
+    top: -25px !important;
+    font-size: 12px !important;
+  }
+
+  .ItemTitle {
+    font-size: 14px !important;
+    padding: 5px 5px !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

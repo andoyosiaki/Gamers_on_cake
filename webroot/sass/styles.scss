@@ -1,0 +1,481 @@
+@mixin Flash($color,$background){
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+  background:$background;
+  color:$color;
+}
+
+@mixin Button($color,$background){
+  padding: 5px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 14px;
+  border: 1px solid #555;
+  font-size: 18px;
+  background:$background;
+  color:$color;
+}
+
+@mixin Reset(){
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+@mixin CommonWidth(){
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reset{
+  @include Reset();
+}
+
+.button{
+  @include Button(#fff,red)
+}
+
+.error{
+  @include Flash(#555,#FFFF33)
+}
+
+.success{
+  @include Flash(#fff,skyblue)
+}
+
+.hidden{
+  display: none;
+}
+
+.submit{
+  text-align: center;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3,h4,p{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #555;
+}
+
+ul{
+  padding: 0;
+  text-decoration: none;
+}
+
+li{
+  text-decoration: none;
+  list-style: none;
+}
+
+.Attension{
+  width: 300px;
+  margin: 0 auto;
+  border-top: 1px solid #555!important;
+  .uncer{
+    text-align: center;
+    margin: 15px 0 0;
+    position: relative;
+    top: -27px;
+    left: 50px;
+    width: 200px;
+    background-color: #dc3545;
+    color:#fff;
+    border-radius: 3px;
+  }
+}
+
+.ProcedureInt{
+  margin-bottom: 15px;
+  font-size: 3rem;
+}
+
+.Wrap_SectionDesc{
+  width: 300px;
+  margin: 0 auto;
+  .SectionDesc{
+    font-size: 50px;
+    background: gray;
+    border-radius: 5px;
+    border: 1px dashed red;
+  }
+}
+
+// my_header.ctp
+.HeaderBtn{
+  padding: 12px 5px;
+  margin: 0 5px;
+  border-radius: 3px;
+}
+
+#register{
+  @extend .HeaderBtn;
+  background-color: orange;
+}
+
+#login{
+  @extend .HeaderBtn;
+  background-color: royalblue;
+  color: #fff;
+}
+
+#logout{
+  @extend .HeaderBtn;
+  background-color: tomato;
+}
+
+#post{
+  @extend .HeaderBtn;
+  background-color: darkorange;
+}
+
+#mypage{
+  @extend .HeaderBtn;
+  background-color: skyblue;
+  color: #fff;
+}
+
+// my_header.ctp
+.HeaderSection{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  background: url(../img/header_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &_Box{
+    @include CommonWidth();
+    text-align: center;
+    .HeaderSection_Title{
+      font-size: 45px;
+      margin-bottom: 35px;
+      padding: 0 50px;
+      background-color:rgba(232,239,255,0.8);
+      border-radius: 5px;
+    }
+  }
+}
+
+// Games.index.ctp
+.SerchFormBox{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  background: url(../img/serchitem_background.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 40px 0;
+    .SerchForm{
+      width: 500px;
+      text-align: center;
+        .button{
+          @include Button(#fff,blue);
+        }
+    }
+}
+
+.SerchForm_Extend_Attension{
+  @extend .Attension;
+  width: 375px;
+  .SerchForm_Extend_uncer{
+    @extend .uncer;
+    width: 280px;
+  }
+}
+
+.inputtext{
+  background-color: #fff;
+  width: 80%;
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+
+.ItemResultBox{
+  width: 100%;
+  &_Article{
+    @include CommonWidth();
+    text-align: center;
+    .ItemResultBox_Loop{
+      max-width: 500px;
+      padding: 15px 0;
+      margin: 15px auto;
+      border-bottom: 1px solid #555;
+        &:last-child{
+          border-bottom: none;
+        }
+        .Items{
+          margin: 5px 0;
+        }
+        .ItemTitle{
+          font-size: 1.5rem;
+        }
+    }
+  }
+}
+
+.ItemResultbutton{
+  @include Button(#555,#fff)
+}
+
+// Games.add.ctp
+.ChoiceBox{
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  margin: 15px 0;
+}
+
+.IntoroductionPostForm{
+  width: 100%;
+  .IntoroductionForm{
+    @include CommonWidth();
+    text-align: center;
+  }
+}
+
+.textareas{
+  max-width: 500px;
+  margin: 0 auto;
+    textarea{
+      width: 100%;
+      border: 2px solid #ccc;
+      padding: 10px;
+      margin: 15px 0;
+      font-size: 20px;
+    }
+}
+
+// Posts.index.ctp
+.PostItemsSection{
+  width: 100%;
+    &_Article{
+    @include CommonWidth();
+      padding: 15px 0;
+      margin: 15px auto;
+    }
+}
+
+.PaginateBox{
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: darkgray;
+    li{
+      a{
+        padding: 15px 20px;
+        margin: 0 10px;
+        border: 1px dashed #555;
+      }
+    }
+}
+
+// .Users.add.ctp
+.UserInsertBox{
+  max-width: 1000px;
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px 0;
+  border: 1px dashed #555;
+  .UserInsertBox_Extend_Attension{
+    @extend .Attension;
+    width: 500px;
+    .UserInsertBox_Extend_uncer{
+      @extend .uncer;
+        width: 330px;
+        left: 80px;
+      }
+  }
+  .UserInsertBox_Input{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 15px 15px;
+  }
+  .WrapIconBox{
+    margin: 20px 0;
+    .IconBox{
+      display: inline-block;
+      text-align: center;
+      margin: 0 15px;
+    }
+  }
+    .button{
+      @include Button(#fff,blue);
+    }
+    .ExtendInputText{
+      @extend .inputtext;
+      margin: 10px 0 0 5px;
+    }
+}
+
+// .Games.view.ctp
+.ItemListSection{
+  @include CommonWidth();
+    .ItemListSection_Article{
+      padding: 25px;
+      border-bottom: 1px solid #555;
+      .ItemListSection_Title_Hard_box{
+        display: flex;
+        align-items: center;
+        margin: 15px 0 0;
+        width: 100%;
+        .ItemHardware{
+          background-color: skyblue;
+          color: #fff;
+          padding: 3px 10px;
+          border-radius: 10px;
+          font-size: 13px;
+        }
+        .ItemTitle{
+          background-color: tomato;
+          border-radius: 10px;
+          padding: 0 10px;
+          margin-left:150px;
+        }
+      }
+      .ItemListSection_Texts_Image_Box{
+        display: flex;
+        padding: 10px 0 0 0px;
+        .ItemListSection_Texts_Auth_Box{
+          margin-left: 50px;
+          display: flex;
+          align-items: center;
+            .ItemListSection_Texts{
+              margin-left: 50px;
+              .Text{
+                height: auto;
+                padding: 15px;
+                margin: 0 0 15px;
+                background: #e0edff;
+                box-sizing: border-box;
+                width: 450px;
+                overflow-wrap: break-word;
+              }
+            }
+            .ItemListSection_Image{
+              width: 100px;
+              margin: 0 auto;
+                img{
+                  width: 100%;
+                }
+            }
+          .ItemListSection_Username{
+            text-align: center;
+          }
+        }
+      }
+      .ItemListSection_TinkerBox{
+        display: flex;
+        align-items: center;
+        .ItemListSection_ItemDetailBtn{
+          margin: 15px 0;
+          .ItemListSection_ItemDetail{
+            @include Button(#fff,tomato);
+            margin:0 15px;
+          }
+        }
+        .ItemListSection_Delete_Edit{
+          margin-left: 100px;
+          .ItemListSection_Edit{
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: red;
+            color: #fff;
+          }
+          .ItemListSection_Delete{
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: blue;
+            color: #fff;
+          }
+        }
+      }
+    }
+}
+$lg: 882px;
+$md: 630px;
+$sm: 400px;
+
+  @media (max-width: $lg) {
+
+    .ItemListSection_Title_Hard_box{
+      text-align: center;
+      display: inline-block!important;
+      .ItemHardware{
+        display: inline-block;
+      }
+      .ItemTitle {
+        display: inline-block;
+        margin:10px 0 10px 0!important;
+        font-size: 16px;
+      }
+    }
+    .ItemListSection_Texts_Image_Box {
+      display: block!important;
+      text-align: center;
+      .ItemListSection_Texts_Auth_Box{
+        display: block!important;
+        margin-left: 0!important;
+        padding: 0;
+        .ItemListSection_Texts{
+          margin-left: 0!important;
+          .Text{
+            width: 100%!important;
+          }
+        }
+      }
+    }
+    .ItemListSection_ItemDetailBtn{
+    margin: 0 auto!important;
+    text-align: center;
+    }
+    .ItemListSection_TinkerBox{
+      display: block!important;
+      .ItemListSection_Delete_Edit{
+        margin-left: 0!important;
+        text-align: center;
+        padding: 15px 0;
+      }
+    }
+  }
+
+  @media (max-width: $md) {
+    .HeaderSection{
+      height: 300px;
+    }
+  }
+  @media (max-width: $sm) {
+    .HeaderSection_Title{
+      font-size: 35px!important;
+    }
+    .SerchForm_Extend_Attension {
+      width: 300px!important;
+    }
+    .SerchForm_Extend_uncer {
+      width: 210px!important;
+    }
+    .SerchForm_Extend_uncer{
+      top: -25px!important;
+      font-size: 12px!important;
+    }
+    .ItemTitle{
+      font-size: 14px!important;
+      padding: 5px 5px!important;
+    }
+  }
