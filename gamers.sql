@@ -46,8 +46,6 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-LOCK TABLES `users` WRITE;
-/*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` VALUES ('test','$2y$10$Cekrw5LZOtCv.QuqIaSA.u7mU.0XA7mP239lrEkNEKttDo5qGSWf.','admin','0',1);
 
 
