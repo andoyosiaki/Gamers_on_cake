@@ -32,7 +32,13 @@ $this->end();
 endif;
 ?>
 <h2><?= h($message) ?></h2>
+<<<<<<< HEAD
 <p class="H_error">
     <strong><?= __d('cake', 'Error') ?>: </strong>
     <?= __d('cake', 'すまない(´・ω・`)[ {0} ] なんてないんだ。', "<strong>'{$url}'</strong>") ?>
+=======
+<p class="error">
+    <strong><?= __d('cake', 'Error') ?>: </strong>
+    <?= __d('cake', 'The requested address {0} was not found on this server.', "<strong>'{$url}'</strong>") ?>
+>>>>>>> origin/master
 </p>

@@ -22,6 +22,7 @@
     </title>
     <?= $this->Html->meta('icon') ?>
 
+<<<<<<< HEAD
     <?= $this->Html->css('main.css') ?>
 
     <!-- <?= $this->fetch('meta') ?>
@@ -31,6 +32,17 @@
 <body>
     <?= $this->element('my_header')  ?>
     <div id="H_container">
+=======
+    <?= $this->Html->css('base.css') ?>
+    <?= $this->Html->css('style.css') ?>
+
+    <?= $this->fetch('meta') ?>
+    <?= $this->fetch('css') ?>
+    <?= $this->fetch('script') ?>
+</head>
+<body>
+    <div id="container">
+>>>>>>> origin/master
         <div id="header">
             <h1><?= __('Error') ?></h1>
         </div>
@@ -40,7 +52,11 @@
             <?= $this->fetch('content') ?>
         </div>
         <div id="footer">
+<<<<<<< HEAD
             <?= $this->Html->link(__('戻る'), 'javascript:history.back()') ?>
+=======
+            <?= $this->Html->link(__('Back'), 'javascript:history.back()') ?>
+>>>>>>> origin/master
         </div>
     </div>
 </body>

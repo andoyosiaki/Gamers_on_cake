@@ -47,7 +47,11 @@ class AppController extends Controller
         ]);
         $this->loadComponent('Flash');
 
+<<<<<<< HEAD
         $this->Session = $this->request->session();
+=======
+        $this->Session = $this->request->getSession();
+>>>>>>> origin/master
 
         $this->loadComponent('Auth',[
           'authorize' =>['Controller'],

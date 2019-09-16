@@ -24,7 +24,11 @@ class GamesController extends AppController
     $this->set(compact('userid'));
 
     if($this->request->is('post')){
+<<<<<<< HEAD
       $data = $this->request->data('title');
+=======
+      $data = $this->request->getData('title');
+>>>>>>> origin/master
       if(mb_strlen($data) > 1 && strlen($data) > 1){
         $title = str_replace([" ", "　"], "" , $data);
         $url = file_get_contents('https://app.rakuten.co.jp/services/api/BooksGame/Search/20170404?format=json&title='.$title.'&applicationId='.ACOUNT_ID);
@@ -56,7 +60,11 @@ class GamesController extends AppController
 
     if($this->request->is('post')){
 
+<<<<<<< HEAD
       $datas = $this->request->data();
+=======
+      $datas = $this->request->getData();
+>>>>>>> origin/master
       $this->set(compact('datas'));
       $this->loadModel('Posts');
 
@@ -85,7 +93,11 @@ class GamesController extends AppController
 
   public function isAuthorized($user = null)
   {
+<<<<<<< HEAD
     $action = $this->request->parames['action'];
+=======
+    $action = $this->request->getParam(['action']);
+>>>>>>> origin/master
 
       if(in_array($action,['index','add'])){
       return true;
