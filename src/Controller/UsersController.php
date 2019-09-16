@@ -134,17 +134,20 @@ class UsersController extends AppController
       }
     }
 
-    public function logout(){
-    $this->request->session()->destroy();
-    return $this->redirect($this->Auth->logout());
-    }
+  public function logout()
+  {
+  $this->request->session()->destroy();
+  return $this->redirect($this->Auth->logout());
+  }
 
-  public function beforeFilter(Event $event){
+  public function beforeFilter(Event $event)
+  {
     parent::beforeFilter($event);
     $this->Auth->allow(['login','add']);
   }
 
-  public function isAuthorized($user = null){
+  public function isAuthorized($user = null)
+  {
     $action = $this->request->parames['action'];
 
       if(in_array($action,['index'])){

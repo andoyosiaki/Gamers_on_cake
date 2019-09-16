@@ -1,58 +1,57 @@
-# CakePHP Application Skeleton
+はじめに
 
-[![Build Status](https://img.shields.io/travis/cakephp/app/master.svg?style=flat-square)](https://travis-ci.org/cakephp/app)
-[![Total Downloads](https://img.shields.io/packagist/dt/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
+このアプリはPHPを独学で学習している私がアウトプットの１つとして作成したもので、セキュリティなどに問題があるかもしれません。  
+もし実際にアプリを動作させるような場合はローカル環境で動作させてください。
+あと、もし眼に余るようなトンデモナイ記述をしていたらそっと<a href="https://twitter.com/float_top">ツイッター</a>のDMにでも連絡いただければ幸いです。(；´Д`)
 
-A skeleton for creating applications with [CakePHP](https://cakephp.org) 3.x.
 
-The framework source code can be found here: [cakephp/cakephp](https://github.com/cakephp/cakephp).
+アプリ名
+====
+**<a href="https://4.kagome.xyz/games/">「Gamers」CakePHP.ver</a>**
+<img src="https://user-images.githubusercontent.com/52596476/64937050-aa45bd00-d893-11e9-9aea-b8facf5e4a7c.png" width=1000>
 
-## Installation
+## 簡単な説明
 
-1. Download [Composer](https://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist cakephp/app [app_name]`.
+**<a href="https://games.kagomeee.com">「Gamers」</a>**
+をcakephpで作り変えました。  
+基本的な機能は変わりありませんが、cssのフレームワークであるbootstrapを使用していないので細かいデザインの変更があります。  
+今回はcakeの学習でもあるのですが、scssの学習にも時間を割きました。
 
-If Composer is installed globally, run
 
-```bash
-composer create-project --prefer-dist cakephp/app
-```
 
-In case you want to use a custom app dir name (e.g. `/myapp/`):
+## 機能
+1. ユーザー登録機能
+1. ログイン・ログアウト機能
+1. 商品検索機能（楽天API）
+1. コンテンツ投稿機能
+1. コンテンツ編集機能
+1. コンテンツ削除機能
+1. マイページ機能
+1. ユーザー投稿一覧表示機能
 
-```bash
-composer create-project --prefer-dist cakephp/app myapp
-```
 
-You can now either use your machine's webserver to view the default home page, or start
-up the built-in webserver with:
+## 開発環境
+使用言語・データーベース
+* PHP
+* HTML
+* CSS（SCSS）
+* MYSQL  
 
-```bash
-bin/cake server -p 8765
-```
+使用ツール・ライブラリ
+* vagrant
+* Font Awesome
+* Atom Editor
+* 楽天API
 
-Then visit `http://localhost:8765` to see the welcome page.
+## 利用方法
 
-## Update
+ダウンロード後に `bootstrap.php` の冒頭にある
+`define('ACOUNT_ID',◯◯◯◯◯◯◯);`より楽天アプリIDを設定してAPIを動作可能にしてください。  
+アプリIDの発行はこちらからどうぞ<a href='https://webservice.rakuten.co.jp/'>「楽天デベロッパーズ」</a>
 
-Since this skeleton is a starting point for your application and various files
-would have been modified as per your needs, there isn't a way to provide
-automated upgrades, so you have to do any updates manually.
 
-## Configuration
+## 作った感想と今後の課題
 
-Read and edit `config/app.php` and setup the `'Datasources'` and any other
-configuration relevant for your application.
-
-## Layout
-
-The app skeleton uses a subset of [Foundation](http://foundation.zurb.com/) (v5) CSS
-framework by default. You can, however, replace it with any other library or
-custom styles.
-# Gamers_on_cake
-# Gamers_on_cake
-# Gamers_on_cake
-# Gamers_on_cake
-# Gamers_on_cake
-# Gamers_on_cake
-# Gamers_on_cake
+cakephpの学習がメインなのですが、scssの学習にも少し力をいれました。  
+今回は`@extend`や`@mixin`などを使用して共通部品などを作成しました。  
+css設計についても学習したいので専門書を購入してみたいと思います。
