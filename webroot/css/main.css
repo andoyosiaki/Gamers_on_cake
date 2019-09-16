@@ -411,12 +411,15 @@ li {
   color: #fff;
 }
 
+<<<<<<< HEAD
 #H_container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 50px;
 }
 
+=======
+>>>>>>> origin/master
 @media (max-width: 882px) {
   .ItemListSection_Title_Hard_box {
     text-align: center;

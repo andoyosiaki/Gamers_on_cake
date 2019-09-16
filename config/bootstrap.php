@@ -16,7 +16,15 @@
 /*
 *  独自定義定数
 */
+<<<<<<< HEAD
 define("ACOUNT_ID",); //楽天デベロッパーID
+=======
+<<<<<<< HEAD
+define("ACOUNT_ID",1083140160780730237); //楽天デベロッパーID
+=======
+define("ACOUNT_ID",); //楽天デベロッパーID
+>>>>>>> origin/master
+>>>>>>> origin/master
 
 /*
  * Configure paths required to find CakePHP + general filepath constants

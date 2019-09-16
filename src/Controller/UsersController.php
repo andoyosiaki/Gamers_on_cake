@@ -103,6 +103,7 @@ class UsersController extends AppController
     {
         $this->request->allowMethod(['post', 'delete']);
         $user = $this->Users->get($id);
+
         if ($this->Users->delete($user)) {
             $this->Flash->success(__('The user has been deleted.'));
         } else {
@@ -111,6 +112,7 @@ class UsersController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
 
 
     public function login(){
@@ -134,28 +136,37 @@ class UsersController extends AppController
       }
     }
 
-  public function logout()
-  {
-  $this->request->session()->destroy();
-  return $this->redirect($this->Auth->logout());
-  }
-
-  public function beforeFilter(Event $event)
-  {
-    parent::beforeFilter($event);
-    $this->Auth->allow(['login','add']);
-  }
-
-  public function isAuthorized($user = null)
-  {
-    $action = $this->request->parames['action'];
-
-      if(in_array($action,['index'])){
-      return true;
+    public function logout()
+    {
+    $this->request->getSession()->destroy();
+    return $this->redirect($this->Auth->logout());
     }
 
-    if($user['role'] === 'user'){
-      return true;
+    public function beforeFilter(Event $event)
+    {
+      parent::beforeFilter($event);
+      $this->Auth->allow(['login','add']);
     }
-  }
+
+    public function isAuthorized($user = null)
+    {
+      $action = $this->request->getParam(['action']);
+
+      if(in_array($action,['/','logout'])){
+      return true;
+      }
+
+      if($user['role'] === 'user'){
+        return false;
+      }
+
+      if(in_array($action,['/'])){
+        return true;
+      }
+
+      if($user['role'] === 'admin'){
+        return true;
+      }
+
+    }
 }

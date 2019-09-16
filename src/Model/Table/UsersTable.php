@@ -45,7 +45,7 @@ class UsersTable extends Table
     public function validationDefault(Validator $validator)
     {
 
-      $validator->provider('ProviderKey', 'App\Model\Validation\CustomValidation');
+      $validator->setProvider('ProviderKey', 'App\Model\Validation\CustomValidation');
 
         $validator
             ->integer('post_id')

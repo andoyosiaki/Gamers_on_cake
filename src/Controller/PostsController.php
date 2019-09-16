@@ -99,7 +99,7 @@ class PostsController extends AppController
 
     public function isAuthorized($user = null)
     {
-      $action = $this->request->parames['action'];
+      $action = $this->request->getParam(['action']);
 
         if(in_array($action,['index','edit','delete'])){
         return true;
