@@ -16,7 +16,7 @@
 /*
 *  独自定義定数
 */
-define("ACOUNT_ID",1083140160780730237); //楽天デベロッパーID
+define("ACOUNT_ID",); //楽天デベロッパーID
 
 /*
  * Configure paths required to find CakePHP + general filepath constants
